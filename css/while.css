@@ -1,0 +1,40 @@
+.container .content {
+    color: #ededed;
+    width: calc(50% - 32px);
+    height: 320px;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start; 
+}
+
+.container .content img {
+    margin: 0 auto;
+    width: 300px;
+}
+
+@media screen and (max-width: 936px) {
+    .container .content {
+        height: 340px;
+    }
+
+    .container .content img {
+        width: 260px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .container .content {
+        width: 100%;
+        height: fit-content;
+    }
+
+    .container .content img {
+        width: 350px;
+    }
+}
+
+@media screen and (max-width: 490px) {
+    .container .content img {
+        width: 200px;
+    }
+}
